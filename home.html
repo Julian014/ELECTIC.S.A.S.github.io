@@ -601,7 +601,204 @@
                 align-items: center;
             }
         }
-    </style>
+        @media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-img {
+        width: 80%; /* Ajusta el tamaño del logo */
+    }
+
+    .search-box {
+        width: 100%; /* Barra de búsqueda se ajusta al ancho */
+    }
+
+    .carousel, .main-container, .featured-products-container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .carousel img, .product img {
+        width: 100%;
+    }
+
+    .categories-container {
+        grid-template-columns: repeat(2, 1fr); /* Menos categorías por fila */
+        width: 100%;
+    }
+
+    .product {
+        width: 100%; /* Productos ocupan todo el ancho */
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .footer-grid {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    /* Ajustar header */
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .logo-img {
+        width: 60%; /* Reducir tamaño del logo */
+        margin-bottom: 10px;
+    }
+
+    .search-container {
+        width: 100%;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .search-box {
+        width: 80%;
+        margin-right: 10px;
+    }
+
+    /* Ajustar navegación */
+    .navbar ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Carrusel */
+    .carousel {
+        width: 100%;
+        padding: 0;
+    }
+
+    .carousel img {
+        width: 100%; /* Imágenes del carrusel ajustadas */
+    }
+
+    /* Categorías */
+    .categories-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en lugar de 3 */
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .category {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .category-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Productos Destacados */
+    .featured-products-container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr); /* Mostrar 2 productos por fila */
+        gap: 15px;
+    }
+
+    .product {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .product img {
+        width: 100%; /* Ajustar tamaño de las imágenes */
+    }
+
+    /* Servicios */
+    .services-container {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .service {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Carrusel de cumpleaños */
+    .birthday-carousel-wrapper {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .birthday-products-carousel {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .product {
+        flex: 0 0 50%; /* 2 productos por fila en móviles */
+        margin-bottom: 10px;
+    }
+
+    /* Footer */
+    .footer-grid {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links {
+        margin-bottom: 20px;
+    }
+
+    .footer-social {
+        margin-bottom: 20px;
+    }
+
+    .footer-logo img {
+        width: 60%; /* Reducir tamaño del logo en el footer */
+    }
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Oculta el desplazamiento horizontal */
+}
+@media (max-width: 768px) {
+    .footer-grid {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%; /* Asegura que el grid no se desborde */
+    }
+
+    .footer-links, .footer-social {
+        align-items: center;
+        margin-bottom: 20px;
+        width: 100%; /* Que ocupen todo el ancho disponible */
+    }
+
+    .footer-logo img {
+        max-width: 80%; /* Reducir el tamaño del logo en móviles */
+    }
+}
+  </style>
     <header class="header-container">
         <div class="logo-container">
             <img src="src/public/IMG/LOGO_ELECTRIC-removebg-preview.png" alt="Logo" class="logo-img">
