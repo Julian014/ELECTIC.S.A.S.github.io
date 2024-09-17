@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros | ELECTRIC S.A.S</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <Style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+header.hero-section {
+    position: relative;
+    height: 60vh;
+    background: url('https://source.unsplash.com/1600x900/?technology') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+header .container {
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 1.5rem;
+}
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.about-section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: white;
+    border-left: 5px solid #90c9a7;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.about-section h2 {
+    color: #413d4b;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.values-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.value-card {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+}
+
+.value-card h3 {
+    margin-bottom: 1rem;
+    color: #90c9a7;
+}
+
+.value-card p {
+    color: #666;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-list li {
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #413d4b;
+    color: white;
+    margin-top: 2rem;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+}
+
+
+    </Style>
+
+    <header>
+        <div class="container">
+            <h1>Sobre Nosotros</h1>
+            <p>Conoce más sobre ELECTRIC S.A.S y nuestra misión de llevar tecnología a tu hogar</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <h2>Nuestra Historia</h2>
+            <p>
+                Fundada en el año 2020, <strong>ELECTRIC S.A.S</strong> ha crecido rápidamente para convertirse en una de las principales empresas de venta de electrodomésticos en Colombia. 
+                Desde nuestros inicios, nuestro objetivo ha sido ofrecer soluciones innovadoras y de alta calidad que mejoren la vida de nuestros clientes. 
+                Nos enorgullece ofrecer productos de las mejores marcas del mundo, brindando no solo tecnología, sino también comodidad y satisfacción en cada hogar.
+            </p>
+        </section>
+
+        <section class="about-section">
+            <h2>Nuestra Misión</h2>
+            <p>
+                En <strong>ELECTRIC S.A.S</strong>, nuestra misión es proporcionar electrodomésticos que hagan la vida más fácil, 
+                eficiente y cómoda. Nos comprometemos a ofrecer productos de alta calidad, con un servicio al cliente excepcional y 
+                soluciones que contribuyan a mejorar el estilo de vida de nuestros clientes. Queremos ser reconocidos por nuestra innovación, fiabilidad y atención al detalle.
+            </p>
+        </section>
+
+        <section class="about-section">
+            <h2>Nuestros Valores</h2>
+            <ul>
+                <li><strong>Calidad:</strong> Solo trabajamos con marcas de confianza que ofrecen productos de primera clase.</li>
+                <li><strong>Innovación:</strong> Buscamos estar siempre a la vanguardia de las tendencias tecnológicas para ofrecer lo mejor.</li>
+                <li><strong>Compromiso:</strong> Estamos dedicados a satisfacer las necesidades de nuestros clientes con pasión y responsabilidad.</li>
+                <li><strong>Sostenibilidad:</strong> Promovemos productos y prácticas que son amigables con el medio ambiente.</li>
+            </ul>
+        </section>
+
+        <section class="about-section">
+            <h2>Por Qué Elegirnos</h2>
+            <p>
+                En <strong>ELECTRIC S.A.S</strong>, nos diferenciamos por ofrecer:
+            </p>
+            <ul>
+                <li>Un amplio catálogo de electrodomésticos de alta calidad.</li>
+                <li>Atención personalizada a cada uno de nuestros clientes.</li>
+                <li>Precios competitivos y opciones de financiación.</li>
+                <li>Garantía en todos nuestros productos y servicio post-venta confiable.</li>
+                <li>Facilidad para realizar compras a través de nuestra plataforma en línea.</li>
+            </ul>
+        </section>
+
+        <section class="about-section">
+            <h2>Contacto</h2>
+            <p>
+                ¿Tienes alguna pregunta o deseas más información sobre nuestros productos y servicios? No dudes en ponerte en contacto con nosotros:
+            </p>
+            <ul>
+                <li><strong>Teléfono:</strong> +57 320 123 4567</li>
+                <li><strong>Email:</strong> info@electricsas.com</li>
+                <li><strong>Dirección:</strong> Calle 123 #45-67, Bogotá, Colombia</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ELECTRIC S.A.S. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
